@@ -62,3 +62,12 @@ a.active, a:hover {
     display: none;
 }
 /* End of Navigation */
+
+/* Hero Section */
+section {
+    background: url('https://www.bentoli.com/wp-content/uploads/2017/07/CommercialFarming-1.jpg') no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+/* End of Hero Section */
+
