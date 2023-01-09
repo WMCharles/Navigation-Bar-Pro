@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Hind Siliguri', sans-serif;
 }
 
@@ -43,7 +43,8 @@ nav ul li a {
     padding: 7px 13px;
 }
 
-a.active, a:hover {
+a.active,
+a:hover {
     background-color: #1b9bff;
     transition: .5s;
 }
@@ -61,6 +62,7 @@ a.active, a:hover {
 #check {
     display: none;
 }
+
 /* End of Navigation */
 
 /* Hero Section */
@@ -70,14 +72,16 @@ section {
     background-position: center;
     height: 60vh;
 }
+
 /* End of Hero Section */
 
 /* Media Queries */
-@media (max-width: 952px){
+@media (max-width: 952px) {
     label.logo {
         font-size: 30px;
         padding-left: 50px;
     }
+
     nav ul li a {
         font-size: 16px;
     }
@@ -109,12 +113,124 @@ section {
         font-size: 20px;
     }
 
-    a:hover, a.active {
+    a:hover,
+    a.active {
         background: none;
         color: #0082e6;
     }
 
-    #check:checked ~ ul{
+    #check:checked~ul {
         left: 0;
     }
+}
+
+/* Events */
+.events-container {
+    margin-top: 4em;
+}
+
+.search-section {
+    margin-bottom: 2em;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.events-header {
+    margin-bottom: 2em;
+    font-size: 1.2em;
+}
+
+.events-header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.events-header p {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.search-bar {
+    width: 20%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-button {
+    height: 40px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+.events {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.events div {
+    padding: 3px;
+}
+
+img {
+    width: 100%;
+    height: 230px;
+}
+
+/* Make the layout responsive */
+@media (max-width: 600px) {
+    .events {
+        grid-template-columns: auto;
+        width: 80%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .events {
+        width: 80%;
+        grid-template-columns: auto auto;
+    }
+
+    .events>div>img {
+        height: 180px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1250px) {
+    .events {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+/* button */
+
+.load-more {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+button {
+    background-color: #1406FA;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
