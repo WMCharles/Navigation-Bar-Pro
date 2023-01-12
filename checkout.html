@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/details.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/checkout.css" />
+    <script src="https://kit.fontawesome.com/57da77bccf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" name="" id="check" />
+        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+        <label class="logo">EVENT PLUGS</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#events-container">Events</a></li>
+            <li><a href="likes.html">Likes</a></li>
+            <li><a href="details.html">Create Event</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="checkout">
+        <h1>Checkout Page</h1>
+        <hr>
+        <div class="row">
+            <div class="col-75">
+                <div class="container">
+                    <form>
+                        <div class="row">
+                            <!-- General Information -->
+                            <div class="col-50">
+                                <h2>Billing Address</h2>
+                                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                <input type="text" class="input-text" id="fname" name="firstname" placeholder="John M. Doe" />
+                                <div class="email-address-row">
+                                    <div class="email-50">
+                                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                        <input type="text" class="input-text" id="email" name="email" placeholder="john@example.com" />
+                                    </div>
+                                    <div class="email-50">
+                                        <label for="address"><i class="fa fa-address-card-o"></i> Address</label>
+                                        <input type="text" class="input-text" id="address" name="address" placeholder="542 W. 15th Street" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card Information -->
+                            <div class="col-50">
+                                <h2>Card Information</h2>
+                                <label for="ccnum">Credit card number</label>
+                                <input type="text" class="input-text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" />
+                                <div class="email-address-row">
+                                    <div class="email-50">
+                                        <label for="expyear">Expiry</label>
+                                        <input type="text" class="input-text" id="expyear" name="expyear" placeholder="12/24" />
+                                    </div>
+                                    <div class="email-50">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" class="input-text" id="cvv" name="cvv" placeholder="352" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-25">
+                <div class="container">
+                    <h2>
+                        Order Summary
+                        <span class="price" style="color: black"><i class="fa fa-shopping-cart"></i> <b>1</b></span>
+                    </h2>
+                    <p>General X 1 <span class="price">$15</span></p>
+                    <p>Admission Fees <span class="price">$5</span></p>
+                    <hr />
+                    <p>
+                        Total <span class="price" style="color: black"><b>$20</b></span>
+                    </p>
+                </div>
+            </div>
+            <div class="btn-column">
+                <button class="btn" >Place Order</button>
+            </div>
+        </div>
+    </div>
+    <div class="ft">
+        <div class="ft-details">
+            <div>
+                <h2>Contacts</h2>
+                <p>
+                    <span><i class="fa-regular fa-envelope"></i> </span>
+                    events.plug@gmail.com
+                </p>
+                <p>
+                    <span><i class="fa-brands fa-linkedin"></i> </span>
+                    linkedin.com/eventsplug/
+                </p>
+                <p>
+                    <span><i class="fa-brands fa-twitter"></i> </span> @eventsplug
+                </p>
+                <p>
+                    <span><i class="fa-brands fa-facebook"></i> </span> events.plug
+                </p>
+            </div>
+            <div>
+                <h2>Features</h2>
+                <p>Company</p>
+                <p>Blog</p>
+                <p>Become an Event Holder</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                <span><i class="fa-regular fa-copyright"></i> </span>2023 Event Plugs
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
