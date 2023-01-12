@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/create.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" name="" id="check" />
+        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+        <label class="logo">EVENT PLUGS</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#events-container">Events</a></li>
+            <li><a href="likes.html">Likes</a></li>
+            <li><a href="details.html">Create Event</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="event-container">
+        <h1>Event Information</h1>
+        <hr />
+        <form>
+            <label for="fname">Event Title*</label>
+            <input class="create-event-input" type="text" id="fname" name="firstname" placeholder="Make it precise as possible" />
+
+            <label for="subject">Event Description*</label>
+            <textarea class="create-event-textarea" id="subject" name="subject" placeholder="Write a brief description of the event.." style="height: 200px"></textarea>
+
+            <div class="cat-location">
+                <div class="sub-cat-location">
+                    <label for="country">Category*</label>
+                    <select class="create-event-select" id="country" name="country">
+                        <option value="australia">IT & Technology</option>
+                        <option value="canada">Agriculture</option>
+                        <option value="usa">Sports</option>
+                    </select>
+                </div>
+                <div class="sub-cat-location">
+                    <label for="lname">Location*</label>
+                    <input class="create-event-input" type="text" id="lname" name="lastname" placeholder="Let attendees know where the event will be.." />
+                </div>
+                <div class="sub-cat-location">
+                    <label for="lname">Price*</label>
+                    <input class="create-event-input" type="text" id="lname" name="lastname" placeholder="Enter Price.." />
+                </div>
+            </div>
+
+            <div class="date-time">
+                <div class="date">
+                    <label for="lname">Start Date*</label>
+                    <input class="create-event-input" type="date" id="lname" name="lastname" placeholder="Your last name.." />
+                </div>
+                <div class="date">
+                    <label for="lname">End Date*</label>
+                    <input class="create-event-input" type="date" id="lname" name="lastname" placeholder="Your last name.." />
+                </div>
+                <div class="time">
+                    <label for="lname">Start Time*</label>
+                    <input class="create-event-input" type="time" id="lname" name="lastname" placeholder="Your last name.." />
+                </div>
+                <div class="time">
+                    <label for="lname">End Time*</label>
+                    <input class="create-event-input" type="time" id="lname" name="lastname" placeholder="Your last name.." />
+                </div>
+            </div>
+
+            <input type="submit" value="Create Event" class="create-event-btn"/>
+        </form>
+    </div>
+    <div class="ft">
+        <div class="ft-details">
+            <div>
+                <h2>Contacts</h2>
+                <p>
+                    <span><i class="fa-regular fa-envelope"></i> </span>
+                    events.plug@gmail.com
+                </p>
+                <p>
+                    <span><i class="fa-brands fa-linkedin"></i> </span>
+                    linkedin.com/eventsplug/
+                </p>
+                <p>
+                    <span><i class="fa-brands fa-twitter"></i> </span> @eventsplug
+                </p>
+                <p>
+                    <span><i class="fa-brands fa-facebook"></i> </span> events.plug
+                </p>
+            </div>
+            <div>
+                <h2>Features</h2>
+                <p>Company</p>
+                <p>Blog</p>
+                <p>Become an Event Holder</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                <span><i class="fa-regular fa-copyright"></i> </span>2023 Event Plugs
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
