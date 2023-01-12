@@ -1,0 +1,17 @@
+.ft {
+    background-color: #1406FA !important;
+    padding-top: 1em !important;
+    color: white !important;
+    line-height: 2em !important;
+}
+
+.ft-details {
+    width: 89%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.copyright {
+    text-align: center;
+}
